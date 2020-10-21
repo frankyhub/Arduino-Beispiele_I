@@ -58,11 +58,11 @@ Drehteller = map(Poti2, 0, 1023, 0, 175);
 Dr_servo.write(Drehteller, SPEED_Dr);
 
   //Kippen
-  Kippen = map(Joystick_Kippen, 0, 1023, 0, 175);
+  Kippen = map(Joystick_Kippen, 0, 1023, 175, 0);
   Ki_servo.write(Kippen, SPEED_Ki);
 
 //Heben
-Heben = map(Joystick_Heben, 0, 1023, 0, 50);
+Heben = map(Joystick_Heben, 0, 1023, 0, 175);
 He_servo.write(Heben, SPEED_He);
 
     delay(100);
