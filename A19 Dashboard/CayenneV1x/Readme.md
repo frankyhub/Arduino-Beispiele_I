@@ -61,11 +61,11 @@ Legen Sie beispielsweise die Startfeuchte auf 60% RH fest, Stop-Feuchtigkeit ist
 
 4. Niedrige Luftfeuchtigkeit start –
 Befeuchtungsmodus Das System wechselt automatisch in den Befeuchtungsmodus, wenn die eingestellte Startfeuchte kleiner als der Wert des Feuchtigkeitswertes ist.
-
 In diesem Modus begann die Befeuchtungseinrichtung zu funktionieren, wenn die Feuchtigkeitserkennung kleiner oder gleich dem Beginn der Luftfeuchtigkeit ist. Befeuchtungsanlagen funktionieren nicht mehr, wenn die Feuchtigkeitserkennung größer oder gleich dem Beginn der Luftfeuchtigkeit ist.
 Zum Beispiel, Stellen Sie die Startfeuchtigkeit auf 40%RH, Stop Luftfeuchtigkeit ist 60%RH, Anzeigeleuchte D9 ist eingeschaltet und Befeuchtungsgeräte in die Arbeit, wenn die Feuchtigkeitserkennung Wert kleiner oder gleich 40% RH ist. Kontrollleuchte D9 ging aus und Befeuchtungsgeräte, um die Arbeit zu stoppen, ist der Feuchtigkeitserkennungswert größer oder gleich 60% RH.
 
-5. Temperaturalarm-Modus: Anzeige zeigt Axx (Standard ist A00) und blinkt im Boot 3 Sekunden, Sie können "+" und "-" verwenden, um den Alarmmodus einzustellen, Alarmmodi sind wie folgt definiert: A00: Alarmfunktion aus (Standard) A01: die derzeit Etektion der Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 1°C, Summer Alarm.
+5. Temperaturalarm-Modus: 
+Anzeige zeigt Axx (Standard ist A00) und blinkt im Boot 3 Sekunden, Sie können "+" und "-" verwenden, um den Alarmmodus einzustellen, Alarmmodi sind wie folgt definiert: A00: Alarmfunktion aus (Standard) A01: die derzeit Etektion der Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 1°C, Summer Alarm.
 
 A02: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 2°C, Summer Alarm.
 A03: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 3°C, Summer Alarm.
@@ -77,24 +77,26 @@ Konkrete Einstellungsmethode
 
 Hinweis: Die folgenden Einstellungen werden automatisch in EEPROM 1 gespeichert. 
 
-Starttemperatur einstellen:
+6. Starttemperatur einstellen:
 Lange s-Taste für 3 Sekunden drücken, Rotlicht D3 beginnen zu blinken. Anzeige zeigt Starttemperaturwert in diesem Moment, Drücken Sie + und – Taste, um diesen Wert anzupassen, Lange drücken ist kontinuierliche Anpassung. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung
 oder automatischen Ausgang ohne Schlüsselaktion in 10S. 2 zu beenden. 
 
-Stopptemperatur einstellen:
+7. Stopptemperatur einstellen:
 Lange s-Taste für 3 Sekunden drücken, Rotlicht D3 beginnen zu blinken. Kurzes Drücken Sie set Taste noch einmal und rote LED D3 lange hell, Anzeige zeigt Stopp-Temperatur-Wert in diesem Moment, drücken + und – Taste, um diesen Wert einzustellen, Lange drücken ist kontinuierliche Einstellung. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung
 oder automatischen Ausgang ohne Schlüsselaktion in 10S. 3 zu beenden. 
 
-Startfeuchtigkeit einrichten:
-Lange s-Taste für 3 Sekunden drücken, Rotlicht D3 beginnen zu blinken. Drücken Sie zweimal die SET-Taste und die rote LED D4 blinkt. Der Bildschirm zeigt den Startfeuchtewert an, dieser Wert kann durch Drücken der + und – Tasten eingestellt werden, langes Drücken ist kontinuierliche Einstellung. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung
-oder automatischen Ausgang ohne Schlüsselaktion in 10S. 4 zu beenden. 
+8. Startfeuchtigkeit einrichten:
+Lange s-Taste für 3 Sekunden drücken, Rotlicht D3 beginnen zu blinken. Drücken Sie zweimal die SET-Taste und die rote LED D4 blinkt. Der Bildschirm zeigt den Startfeuchtewert an, dieser Wert kann durch Drücken der + und – Tasten eingestellt werden, langes Drücken ist kontinuierliche Einstellung. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung oder automatischen Ausgang ohne Schlüsselaktion in 10S. 4 zu beenden. 
 
-Stellen Sie die Stop-Feuchtigkeit Lange drücken Sie S-Taste für 3 Sekunden, Rotlicht D3 beginnen zu blinken. Drücken Sie dreimal die SET-Taste und die rote LED D4 blinkt. Display-Bildschirm zeigt den Wert der Stop-Feuchtigkeit zu diesem Zeitpunkt, dieser Wert kann durch Drücken der + und – Tasten eingestellt werden, langes Drücken ist kontinuierliche Einstellung. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung
+9. Stellen Sie die Stop-Feuchtigkeit ein
+Lange drücken Sie S-Taste für 3 Sekunden, Rotlicht D3 beginnen zu blinken. Drücken Sie dreimal die SET-Taste und die rote LED D4 blinkt. Display-Bildschirm zeigt den Wert der Stop-Feuchtigkeit zu diesem Zeitpunkt, dieser Wert kann durch Drücken der + und – Tasten eingestellt werden, langes Drücken ist kontinuierliche Einstellung. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung
 oder automatischen Ausgang ohne Schlüsselaktion in 10S. 5 zu beenden. 
 
-Stellen Sie das Temperaturmodell Lange drücken S-Taste für 3 Sekunden, Rotlicht D3 beginnen zu blinken. Kurzes Set-Taste viermal wieder und rote LED D3 und LED D4 beginnen gleichzeitig zu blinken. Zu diesem Zeitpunkt zeigt der Bildschirm "C" oder "F", dieser Wert kann durch Drücken der + und – Tasten eingestellt werden. C bedeutet, dass das aktuelle Temperaturmodell Grad Celsius ist, F bedeutet, dass das aktuelle Temperaturmuster Fahrenheit ist. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung
-oder automatischen Ausgang ohne Schlüsselaktion in 10S. 6 zu beenden. 
+10. Stellen Sie das Temperaturmodell ein 
+Lange drücken S-Taste für 3 Sekunden, Rotlicht D3 beginnen zu blinken. Kurzes Set-Taste viermal wieder und rote LED D3 und LED D4 beginnen gleichzeitig zu blinken. Zu diesem Zeitpunkt zeigt der Bildschirm "C" oder "F", dieser Wert kann durch Drücken der + und – Tasten eingestellt werden. C bedeutet, dass das aktuelle Temperaturmodell Grad Celsius ist, F bedeutet, dass das aktuelle Temperaturmuster Fahrenheit ist. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung oder automatischen Ausgang ohne Schlüsselaktion in 10S. 6 zu beenden. 
 
-Einstellen des Alarmmodus Siehe auch "Funktionsbeschreibung" 5.Temperatur-Alarmmodus.
+11. Einstellen des Alarmmodus 
+Siehe auch "Funktionsbeschreibung" 5.Temperatur-Alarmmodus.
 
-Stellen Sie die Werkseinstellungen Hold + wieder her und – drücken Sie die Taste und starten Sie dann, Display-Bildschirmanzeige "rrrr", Alle Einstellungen werden nach Buzzer-Sound dreimal wieder in die Werkseinstellungen zurückgesetzt.
+12. Stellen Sie auf die Werkseinstellungen zurück
+Hold + wieder her und – drücken Sie die Taste und starten Sie dann, Display-Bildschirmanzeige "rrrr", Alle Einstellungen werden nach Buzzer-Sound dreimal wieder in die Werkseinstellungen zurückgesetzt.
