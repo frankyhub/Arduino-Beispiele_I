@@ -21,15 +21,24 @@ void loop() {
   stepper.step(2038); // 2038 steps/20Sek
   stepper.setSpeed(3); // 3 rpm
   stepper.step(-2038); // -2038 steps/20Sek
-      delay(1000); //Pause
-    
+          delay(1000); //Pause
+  
+  stepper.setSpeed(6); // 6 rpm
+  stepper.step(2038); // 2038 steps/10 Sek
   stepper.setSpeed(6); // 6 rpm
   stepper.step(-2038); // 2038 steps/10 Sek
+          delay(1000); //Pause
   
   stepper.setSpeed(12); // 12 rpm
   stepper.step(2038); // 2038 steps/5 Sek
-      delay(1000); //Pause
-  stepper.setSpeed(12); // 12 rpm
+  stepper.setSpeed(12); // 12 r8pm
   stepper.step(-2038); // 2038 steps/5 Sek
+          delay(1000); //Pause
+  
+  stepper.setSpeed(18); // 18 rpm
+  stepper.step(2038); // 2038 steps/3.3 Sek
+      delay(1000); //Pause
+  stepper.setSpeed(18); // 18 rpm
+  stepper.step(-2038); // 2038 steps/3.3 Sek
       delay(1000); //Pause
 }
