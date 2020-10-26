@@ -45,19 +45,19 @@ Produktelektrische Eigenschaften:
  
 ## Funktionsbeschreibung:
 
-1. Hochtemperaturstart – Kühlmodus:
+1. Kühlmodus:
 Kühlgeräte beginnen zu arbeiten, wenn der Starttemperaturwert größer als der Stopptemperaturwert ist und die Temperaturmessung größer oder gleich der Anfangstemperatur ist. Kühlgeräte funktionieren nicht mehr, wenn die Temperaturmessung kleiner oder gleich der Stopptemperatur ist.
 Stellen Sie beispielsweise die Starttemperatur auf 20°C ein, die Stopptemperatur ist 15°C, D8-Licht ist eingeschaltet und Kühlgeräte funktionieren, wenn die Erfassungstemperatur größer oder gleich 20°C ist. D8-Licht ging aus und Kühlgeräte werden nicht mehr funktionieren, wenn der Temperaturwert weniger als 15°C beträgt. 
 
-2. Niedrigtemperaturstart – Heizmodus: 
+2. Heizmodus: 
 Heizgeräte beginnen zu arbeiten, wenn der Starttemperaturwert kleiner als der Stopptemperaturwert ist und die Temperatur kleiner oder gleich der Anfangstemperatur ist. Heizgeräte funktionieren nicht mehr, wenn die Prüftemperatur größer oder gleich der Stopptemperatur ist.
 Stellen Sie beispielsweise die Starttemperatur auf 15°C ein, Stopptemperatur ist 20°C. D8-Leuchten werden eingeschaltet und Heizgeräte beginnen zu funktionieren, wenn der Temperaturmesswert kleiner oder gleich 15°C ist. D8-Licht ging aus und Heizgeräte, um nicht mehr zu arbeiten, wenn der Temperaturmesswert größer oder gleich der Stopptemperatur ist. 
 
-3. Hoher Feuchtigkeitsstart – Desiccant-Modus:
+3. Hoher Feuchtigkeitsstart:
 Das System bestimmt automatisch den Modus der Entfeuchtung, wenn der beginnende Feuchtigkeitswert höher ist als der Wert der Stop-Feuchtigkeit.
 In diesem Modus, Entfeuchtungsgeräte zu starten Arbeit, wenn Feuchtigkeitserkennung größer oder gleich dem Beginn der Feuchtigkeit ist. Entfeuchtungsanlagen funktionieren nicht mehr, wenn die Feuchtigkeitserkennung kleiner oder gleich der Stop-Feuchtigkeit ist. Legen Sie beispielsweise die Startfeuchte auf 60% RH fest, Stop-Feuchtigkeit ist 40%RH. Die Anzeigeleuchte D9 leuchtet ein und entfeuchtet die Entfeuchtungsanlagen, wenn der erkannte Feuchtigkeitswert größer oder gleich 60% RH ist. Kontrollleuchte D9 ging aus und Entfeuchtungsgeräte nicht mehr funktionieren, wenn Feuchtigkeitserkennungswert kleiner oder gleich 40% RH ist. 
 
-4. Niedrige Luftfeuchtigkeit start – Befeuchtungsmodus 
+4. Befeuchtungsmodus:
 Das System wechselt automatisch in den Befeuchtungsmodus, wenn die eingestellte Startfeuchte kleiner als der Wert des Feuchtigkeitswertes ist.
 In diesem Modus begann die Befeuchtungseinrichtung zu funktionieren, wenn die Feuchtigkeitserkennung kleiner oder gleich dem Beginn der Luftfeuchtigkeit ist. Befeuchtungsanlagen funktionieren nicht mehr, wenn die Feuchtigkeitserkennung größer oder gleich dem Beginn der Luftfeuchtigkeit ist. Zum Beispiel, Stellen Sie die Startfeuchtigkeit auf 40%RH, Stop Luftfeuchtigkeit ist 60%RH, Anzeigeleuchte D9 ist eingeschaltet und Befeuchtungsgeräte in die Arbeit, wenn die Feuchtigkeitserkennung Wert kleiner oder gleich 40% RH ist. Kontrollleuchte D9 ging aus und Befeuchtungsgeräte, um die Arbeit zu stoppen, ist der Feuchtigkeitserkennungswert größer oder gleich 60% RH.
 
@@ -79,15 +79,15 @@ oder automatischen Ausgang ohne Schlüsselaktion in 10S. 3 zu beenden.
 8. Startfeuchtigkeit einrichten:
 Lange s-Taste für 3 Sekunden drücken, Rotlicht D3 beginnen zu blinken. Drücken Sie zweimal die SET-Taste und die rote LED D4 blinkt. Der Bildschirm zeigt den Startfeuchtewert an, dieser Wert kann durch Drücken der + und – Tasten eingestellt werden, langes Drücken ist kontinuierliche Einstellung. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung oder automatischen Ausgang ohne Schlüsselaktion in 10S. 4 zu beenden. 
 
-9. Stellen Sie die Stop-Feuchtigkeit ein
+9. Stellen Sie die Stop-Feuchtigkeit ein:
 Lange drücken Sie S-Taste für 3 Sekunden, Rotlicht D3 beginnen zu blinken. Drücken Sie dreimal die SET-Taste und die rote LED D4 blinkt. Display-Bildschirm zeigt den Wert der Stop-Feuchtigkeit zu diesem Zeitpunkt, dieser Wert kann durch Drücken der + und – Tasten eingestellt werden, langes Drücken ist kontinuierliche Einstellung. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung
 oder automatischen Ausgang ohne Schlüsselaktion in 10S. 5 zu beenden. 
 
-10. Stellen Sie das Temperaturmodell ein 
+10. Stellen Sie das Temperaturmodell ein:
 Lange drücken S-Taste für 3 Sekunden, Rotlicht D3 beginnen zu blinken. Kurzes Set-Taste viermal wieder und rote LED D3 und LED D4 beginnen gleichzeitig zu blinken. Zu diesem Zeitpunkt zeigt der Bildschirm "C" oder "F", dieser Wert kann durch Drücken der + und – Tasten eingestellt werden. C bedeutet, dass das aktuelle Temperaturmodell Grad Celsius ist, F bedeutet, dass das aktuelle Temperaturmuster Fahrenheit ist. Drücken Sie lange S-Taste, um die Einstellung nach Abschluss der Einstellung oder automatischen Ausgang ohne Schlüsselaktion in 10S. 6 zu beenden. 
 
-11. Einstellen des Alarmmodus 
+11. Einstellen des Alarmmodus:
 Siehe auch "Funktionsbeschreibung" 5.Temperatur-Alarmmodus.
 
-12. Stellen Sie auf die Werkseinstellungen zurück
+12. Stellen Sie auf die Werkseinstellungen zurück:
 Hold + wieder her und – drücken Sie die Taste und starten Sie dann, Display-Bildschirmanzeige "rrrr", Alle Einstellungen werden nach Buzzer-Sound dreimal wieder in die Werkseinstellungen zurückgesetzt.
