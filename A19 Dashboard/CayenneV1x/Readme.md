@@ -1,28 +1,28 @@
-Temperatur- und Feuchtigkeitsregelmodul mit AM2301 Sensor
+## Temperatur- und Feuchtigkeitsregelmodul mit AM2301 Sensor
 
 Produktelektrische Eigenschaften:
 
-Feuchte-Messbereich:0%RH -99,9%
+- Feuchte-Messbereich:0%RH -99,9%
 
-RH-Temperatur-Messbereich: -40°C bei 80°C
+- RH-Temperatur-Messbereich: -40°C bei 80°C
 
-Auflösungsleistung: Luftfeuchtigkeit
+- Auflösungsleistung: Luftfeuchtigkeit
 
-0,1%RH, Temperatur 0,1 Messgenauigkeit: ±3%RH; ±0,5%°C
+- 0,1%RH, Temperatur 0,1 Messgenauigkeit: ±3%RH; ±0,5%°C
 
-Regelgenauigkeit: 0,1%RH; ±0.1%°C
+- Regelgenauigkeit: 0,1%RH; ±0.1%°C
 
-Bildwiederholfrequenz: 1S
+- Bildwiederholfrequenz: 1S
 
-Eingangsspannung: 5V-24V DC-Messeingang:
+- Eingangsspannung: 5V-24V DC-Messeingang:
 
-AM2301 Temperatur- und Feuchtigkeitsintegrierter Sensor
+- AM2301 Temperatur- und Feuchtigkeitsintegrierter Sensor
 
-Ausgang: Zwei-Wege-10A-Relais
+- Ausgang: Zwei-Wege-10A-Relais
 
-Umgebungsanforderungen: -10°C–60°C, Luftfeuchtigkeit 20%–85%
+- Umgebungsanforderungen: -10°C–60°C, Luftfeuchtigkeit 20%–85%
 
-Gesamtenergieverbrauch: Ruhestrom≤20ma, Zugstrom≤50ma.
+- Gesamtenergieverbrauch: Ruhestrom≤20ma, Zugstrom≤50ma.
 
 Funktion:
 
@@ -55,14 +55,11 @@ Stellen Sie beispielsweise die Starttemperatur auf 15°C ein, Stopptemperatur is
 
 3. Hoher Feuchtigkeitsstart – Desiccant-Modus:
 Das System bestimmt automatisch den Modus der Entfeuchtung, wenn der beginnende Feuchtigkeitswert höher ist als der Wert der Stop-Feuchtigkeit.
+In diesem Modus, Entfeuchtungsgeräte zu starten Arbeit, wenn Feuchtigkeitserkennung größer oder gleich dem Beginn der Feuchtigkeit ist. Entfeuchtungsanlagen funktionieren nicht mehr, wenn die Feuchtigkeitserkennung kleiner oder gleich der Stop-Feuchtigkeit ist. Legen Sie beispielsweise die Startfeuchte auf 60% RH fest, Stop-Feuchtigkeit ist 40%RH. Die Anzeigeleuchte D9 leuchtet ein und entfeuchtet die Entfeuchtungsanlagen, wenn der erkannte Feuchtigkeitswert größer oder gleich 60% RH ist. Kontrollleuchte D9 ging aus und Entfeuchtungsgeräte nicht mehr funktionieren, wenn Feuchtigkeitserkennungswert kleiner oder gleich 40% RH ist. 
 
-In diesem Modus, Entfeuchtungsgeräte zu starten Arbeit, wenn Feuchtigkeitserkennung größer oder gleich dem Beginn der Feuchtigkeit ist. Entfeuchtungsanlagen funktionieren nicht mehr, wenn die Feuchtigkeitserkennung kleiner oder gleich der Stop-Feuchtigkeit ist.
-Legen Sie beispielsweise die Startfeuchte auf 60% RH fest, Stop-Feuchtigkeit ist 40%RH. Die Anzeigeleuchte D9 leuchtet ein und entfeuchtet die Entfeuchtungsanlagen, wenn der erkannte Feuchtigkeitswert größer oder gleich 60% RH ist. Kontrollleuchte D9 ging aus und Entfeuchtungsgeräte nicht mehr funktionieren, wenn Feuchtigkeitserkennungswert kleiner oder gleich 40% RH ist. 
-
-4. Niedrige Luftfeuchtigkeit start –
-Befeuchtungsmodus Das System wechselt automatisch in den Befeuchtungsmodus, wenn die eingestellte Startfeuchte kleiner als der Wert des Feuchtigkeitswertes ist.
-In diesem Modus begann die Befeuchtungseinrichtung zu funktionieren, wenn die Feuchtigkeitserkennung kleiner oder gleich dem Beginn der Luftfeuchtigkeit ist. Befeuchtungsanlagen funktionieren nicht mehr, wenn die Feuchtigkeitserkennung größer oder gleich dem Beginn der Luftfeuchtigkeit ist.
-Zum Beispiel, Stellen Sie die Startfeuchtigkeit auf 40%RH, Stop Luftfeuchtigkeit ist 60%RH, Anzeigeleuchte D9 ist eingeschaltet und Befeuchtungsgeräte in die Arbeit, wenn die Feuchtigkeitserkennung Wert kleiner oder gleich 40% RH ist. Kontrollleuchte D9 ging aus und Befeuchtungsgeräte, um die Arbeit zu stoppen, ist der Feuchtigkeitserkennungswert größer oder gleich 60% RH.
+4. Niedrige Luftfeuchtigkeit start – Befeuchtungsmodus 
+Das System wechselt automatisch in den Befeuchtungsmodus, wenn die eingestellte Startfeuchte kleiner als der Wert des Feuchtigkeitswertes ist.
+In diesem Modus begann die Befeuchtungseinrichtung zu funktionieren, wenn die Feuchtigkeitserkennung kleiner oder gleich dem Beginn der Luftfeuchtigkeit ist. Befeuchtungsanlagen funktionieren nicht mehr, wenn die Feuchtigkeitserkennung größer oder gleich dem Beginn der Luftfeuchtigkeit ist. Zum Beispiel, Stellen Sie die Startfeuchtigkeit auf 40%RH, Stop Luftfeuchtigkeit ist 60%RH, Anzeigeleuchte D9 ist eingeschaltet und Befeuchtungsgeräte in die Arbeit, wenn die Feuchtigkeitserkennung Wert kleiner oder gleich 40% RH ist. Kontrollleuchte D9 ging aus und Befeuchtungsgeräte, um die Arbeit zu stoppen, ist der Feuchtigkeitserkennungswert größer oder gleich 60% RH.
 
 5. Temperaturalarm-Modus: 
 Anzeige zeigt Axx (Standard ist A00) und blinkt im Boot 3 Sekunden, Sie können "+" und "-" verwenden, um den Alarmmodus einzustellen, Alarmmodi sind wie folgt definiert: A00: Alarmfunktion aus (Standard) A01: die derzeit Etektion der Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 1°C, Summer Alarm.
