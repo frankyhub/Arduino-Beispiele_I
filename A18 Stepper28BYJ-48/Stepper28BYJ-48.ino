@@ -7,6 +7,13 @@ ebay: https://www.ebay.de/itm/3x-Schrittmotor-28BYJ-48-mit-ULN2003A-Treiber-fur-
  */
 
 #include <Stepper.h>
+/*
+<Stepper.h>-Funktionen:
+Stepper(steps, pin1, pin2)
+Stepper(steps, pin1, pin2, pin3, pin4)
+setSpeed(rpm)
+step(steps)
+*/
 
 #define STEPS 2038 // Motor (28BYJ-48)
 Stepper stepper(STEPS, 8, 9, 10, 11); // NANO Platine V1.0 NANO V3.1
