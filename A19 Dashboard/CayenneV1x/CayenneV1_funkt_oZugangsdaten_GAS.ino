@@ -9,9 +9,27 @@
  * C:\Users\User\Documents\Arduino\libraries\LoRa-ESP32-OLED\esp32\variants\WIFI_LoRa_32
  *  http://arduino.esp8266.com/stable/package_esp8266com_index.json
  *  https://dl.espressif.com/dl/package_esp32_index.json
- * 
- *  
+ *   
  * KHF 23.10.2020
+ *  
+ *  --------------------------
+ * Gassensor (NANO)
+ * #include "MQ135.h"
+ *float ppm;
+ *MQ135 gassensor = analogRead(A3);
+ *void setup() {
+ * Serial.begin(9600);
+ * pinMode(A0, INPUT);
+ *}
+ *void loop() {
+ * ppm = gassensor.getPPM();
+ * Serial.print("CO2-Gehalt: ");
+ * Serial.print(ppm * 100);
+  *Serial.println(" ppm");
+ * delay (2000);
+ *}
+ *  KHF 26.10.2020
+ * ----------------------------------
  */
 
  
