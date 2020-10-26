@@ -24,20 +24,20 @@ Produktelektrische Eigenschaften:
 
 - Gesamtenergieverbrauch: Ruhestrom≤20ma, Zugstrom≤50ma.
 
-Funktion:
+## Funktionen:
 
-– Mit Temperatur- und Feuchtigkeitsregelfunktion.
+- Mit Temperatur- und Feuchtigkeitsregelfunktion.
 
-– Kann die aktuelle Temperatur und Luftfeuchtigkeit in Echtzeit anzeigen.
+- Kann die aktuelle Temperatur und Luftfeuchtigkeit in Echtzeit anzeigen.
 
-– Mit Übergrenzungsalarmfunktion.
+- Mit Übergrenzungsalarmfunktion.
 
-– Relais-Arbeitsanzeige-Funktion.
+- Relais-Arbeitsanzeige-Funktion.
 
-– Mit Netzteil Reverse-Schutz-Funktion. Der Controller funktioniert nicht, wenn das Netzteil an den Zähler angeschlossen ist.
+- Mit Netzteil Reverse-Schutz-Funktion. Der Controller funktioniert nicht, wenn das Netzteil an den Zähler angeschlossen ist.
 
 
-Kontrollleuchte:
+Kontrollleuchten:
 
 1. D8 ist die Temperaturrelaisanzeigelampe. Die Heizung (Kühlanlage) beginnt zu funktionieren, wenn das D8-Licht eingeschaltet ist.
 2. D9 ist eine Feuchtigkeitsanzeige Relaisanzeige Lampe. Befeuchtungs-/Entfeuchtungsanlagen begannen zu funktionieren, wenn das D9-Licht eingeschaltet wurde.
@@ -63,14 +63,12 @@ In diesem Modus begann die Befeuchtungseinrichtung zu funktionieren, wenn die Fe
 
 5. Temperaturalarm-Modus: 
 Anzeige zeigt Axx (Standard ist A00) und blinkt im Boot 3 Sekunden, Sie können "+" und "-" verwenden, um den Alarmmodus einzustellen, Alarmmodi sind wie folgt definiert: A00: Alarmfunktion aus (Standard) A01: die derzeit Etektion der Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 1°C, Summer Alarm.
-
 A02: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 2°C, Summer Alarm.
 A03: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 3°C, Summer Alarm.
 und so weiter, max kann A30 eingestellt werden.
-
 Zum Beispiel,Einstellen Alarmmodus A03, Starttemperatur ist20°C, Stop-Temperatur ist 30°C, Buzzer-Sound-Alarm, wenndie gemessene Temperatur über 33°C oder unter 17°C ist.
 
-Konkrete Einstellungsmethode
+## Konkrete Einstellungsmethode
 
 Hinweis: Die folgenden Einstellungen werden automatisch in EEPROM 1 gespeichert. 
 
