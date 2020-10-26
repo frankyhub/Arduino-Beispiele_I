@@ -7,11 +7,11 @@ KHF 25.10.2020
 
 Seriell: 9600 Baud 
 
-18:36:03.111 -> CO2 ppm value : 0.18
-18:36:04.089 -> CO2 ppm value : 0.17
-18:36:05.106 -> CO2 ppm value : 0.18
-18:36:06.089 -> CO2 ppm value : 0.20
-
+18:36:03.010 -> MQ135 RZERO Calibration Value : 849.93
+18:36:03.111 -> CO2 ppm value : 705.52
+18:36:04.089 -> CO2 ppm value : 705.52
+18:36:05.106 -> CO2 ppm value : 705.52
+18:36:06.089 -> CO2 ppm value : 705.52
 
 */
 
