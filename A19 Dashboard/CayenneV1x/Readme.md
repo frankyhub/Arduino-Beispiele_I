@@ -37,13 +37,13 @@ Produktelektrische Eigenschaften:
 - Mit Netzteil Reverse-Schutz-Funktion. Der Controller funktioniert nicht, wenn das Netzteil an den Zähler angeschlossen ist.
 
 
-Kontrollleuchten:
+## Kontrollleuchten:
 
 1. D8 ist die Temperaturrelaisanzeigelampe. Die Heizung (Kühlanlage) beginnt zu funktionieren, wenn das D8-Licht eingeschaltet ist.
 2. D9 ist eine Feuchtigkeitsanzeige Relaisanzeige Lampe. Befeuchtungs-/Entfeuchtungsanlagen begannen zu funktionieren, wenn das D9-Licht eingeschaltet wurde.
 3. Das Display zeigt den Echtzeit-Feuchtigkeitswert an, wenn das grüne D5-Licht eingeschaltet ist. Das Display zeigt den Echtzeit-Temperaturwert an, wenn die D5-Lampe ausgeht.
  
-Funktionsbeschreibung:
+## Funktionsbeschreibung:
 
 1. Hochtemperaturstart – Kühlmodus:
 Kühlgeräte beginnen zu arbeiten, wenn der Starttemperaturwert größer als der Stopptemperaturwert ist und die Temperaturmessung größer oder gleich der Anfangstemperatur ist. Kühlgeräte funktionieren nicht mehr, wenn die Temperaturmessung kleiner oder gleich der Stopptemperatur ist.
@@ -62,11 +62,7 @@ Das System wechselt automatisch in den Befeuchtungsmodus, wenn die eingestellte 
 In diesem Modus begann die Befeuchtungseinrichtung zu funktionieren, wenn die Feuchtigkeitserkennung kleiner oder gleich dem Beginn der Luftfeuchtigkeit ist. Befeuchtungsanlagen funktionieren nicht mehr, wenn die Feuchtigkeitserkennung größer oder gleich dem Beginn der Luftfeuchtigkeit ist. Zum Beispiel, Stellen Sie die Startfeuchtigkeit auf 40%RH, Stop Luftfeuchtigkeit ist 60%RH, Anzeigeleuchte D9 ist eingeschaltet und Befeuchtungsgeräte in die Arbeit, wenn die Feuchtigkeitserkennung Wert kleiner oder gleich 40% RH ist. Kontrollleuchte D9 ging aus und Befeuchtungsgeräte, um die Arbeit zu stoppen, ist der Feuchtigkeitserkennungswert größer oder gleich 60% RH.
 
 5. Temperaturalarm-Modus: 
-Anzeige zeigt Axx (Standard ist A00) und blinkt im Boot 3 Sekunden, Sie können "+" und "-" verwenden, um den Alarmmodus einzustellen, Alarmmodi sind wie folgt definiert: A00: Alarmfunktion aus (Standard) A01: die derzeit Etektion der Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 1°C, Summer Alarm.
-A02: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 2°C, Summer Alarm.
-A03: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 3°C, Summer Alarm.
-und so weiter, max kann A30 eingestellt werden.
-Zum Beispiel,Einstellen Alarmmodus A03, Starttemperatur ist20°C, Stop-Temperatur ist 30°C, Buzzer-Sound-Alarm, wenndie gemessene Temperatur über 33°C oder unter 17°C ist.
+Anzeige zeigt Axx (Standard ist A00) und blinkt im Boot 3 Sekunden, Sie können "+" und "-" verwenden, um den Alarmmodus einzustellen, Alarmmodi sind wie folgt definiert: A00: Alarmfunktion aus (Standard) A01: die derzeit Etektion der Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 1°C, Summer Alarm. A02: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 2°C, Summer Alarm. A03: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 3°C, Summer Alarm und so weiter, max kann A30 eingestellt werden. Zum Beispiel, Einstellen Alarmmodus A03, Starttemperatur ist20°C, Stop-Temperatur ist 30°C, Buzzer-Sound-Alarm, wenndie gemessene Temperatur über 33°C oder unter 17°C ist.
 
 ## Konkrete Einstellungsmethode
 
