@@ -1,24 +1,41 @@
 Temperatur- und Feuchtigkeitsregelmodul mit AM2301 Sensor
 
 Produktelektrische Eigenschaften:
+
 Feuchte-Messbereich:0%RH -99,9%
+
 RH-Temperatur-Messbereich: -40°C bei 80°C
+
 Auflösungsleistung: Luftfeuchtigkeit
+
 0,1%RH, Temperatur 0,1 Messgenauigkeit: ±3%RH; ±0,5%°C
+
 Regelgenauigkeit: 0,1%RH; ±0.1%°C
+
 Bildwiederholfrequenz: 1S
+
 Eingangsspannung: 5V-24V DC-Messeingang:
+
 AM2301 Temperatur- und Feuchtigkeitsintegrierter Sensor
+
 Ausgang: Zwei-Wege-10A-Relais
+
 Umgebungsanforderungen: -10°C–60°C, Luftfeuchtigkeit 20%–85%
+
 Gesamtenergieverbrauch: Ruhestrom≤20ma, Zugstrom≤50ma.
 
 Funktion:
+
 – Mit Temperatur- und Feuchtigkeitsregelfunktion.
+
 – Kann die aktuelle Temperatur und Luftfeuchtigkeit in Echtzeit anzeigen.
+
 – Mit Übergrenzungsalarmfunktion.
+
 – Relais-Arbeitsanzeige-Funktion.
+
 – Mit Netzteil Reverse-Schutz-Funktion. Der Controller funktioniert nicht, wenn das Netzteil an den Zähler angeschlossen ist.
+
 
 Kontrollleuchte:
 
@@ -53,8 +70,10 @@ Zum Beispiel, Stellen Sie die Startfeuchtigkeit auf 40%RH, Stop Luftfeuchtigkeit
 A02: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 2°C, Summer Alarm.
 A03: die derzeit detektion von Feuchtigkeit über die Starttemperatur oder Stopptemperatur von 3°C, Summer Alarm.
 und so weiter, max kann A30 eingestellt werden.
-Zum Beispiel ,Einstellen Alarmmodus A03, Starttemperatur ist20°C, Stop-Temperatur ist 30°C, Buzzer-Sound-Alarm, wenndie gemessene Temperatur über 33°C oder unter 17°C ist.
-Konkrete Einstellungsmethode:
+
+Zum Beispiel,Einstellen Alarmmodus A03, Starttemperatur ist20°C, Stop-Temperatur ist 30°C, Buzzer-Sound-Alarm, wenndie gemessene Temperatur über 33°C oder unter 17°C ist.
+
+Konkrete Einstellungsmethode
 
 Hinweis: Die folgenden Einstellungen werden automatisch in EEPROM 1 gespeichert. 
 
