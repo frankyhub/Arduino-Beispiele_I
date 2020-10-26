@@ -1,38 +1,37 @@
-  
+ 
 /*
 Board: NANO
 ATMega328P Old Bootloader
 
-KHF 25.10.2020
+KHF 26.10.2020
 
 Seriell: 9600 Baud 
 
-18:36:03.010 -> MQ135 RZERO Calibration Value : 849.93
-18:36:03.111 -> CO2 ppm value : 705.52
-18:36:04.089 -> CO2 ppm value : 705.52
-18:36:05.106 -> CO2 ppm value : 705.52
-18:36:06.089 -> CO2 ppm value : 705.52
-
+08:49:08.605 -> CO2-Gehalt: 832.58 ppm
+08:49:10.602 -> CO2-Gehalt: 832.58 ppm
+08:49:12.596 -> CO2-Gehalt: 832.58 ppm
+08:49:14.603 -> CO2-Gehalt: 852.50 ppm
+08:49:16.612 -> CO2-Gehalt: 852.50 ppm
+08:49:18.601 -> CO2-Gehalt: 842.50 ppm
+08:49:20.622 -> CO2-Gehalt: 842.50 ppm
+08:49:22.626 -> CO2-Gehalt: 822.73 ppm
+08:49:24.631 -> CO2-Gehalt: 812.97 ppm
+08:49:26.651 -> CO2-Gehalt: 812.97 ppm
+08:49:28.638 -> CO2-Gehalt: 842.50 ppm
+08:49:30.640 -> CO2-Gehalt: 832.58 ppm
 */
 
 #include "MQ135.h"
-#define ANALOGPIN A0    //  Define Analog PIN on Arduino Board
-#define RZERO 206.85    //  Define RZERO Calibration Value
-MQ135 gasSensor = MQ135(ANALOGPIN);
-
-void setup()
-{
-  Serial.begin(9600);
-  float rzero = gasSensor.getRZero();
-  delay(3000);
-  Serial.print("MQ135 RZERO Calibration Value : ");
-  Serial.println(rzero);
+float ppm;
+MQ135 gassensor = analogRead(A3);
+void setup() {
+ Serial.begin(9600);
+ pinMode(A3, INPUT);
 }
-
 void loop() {
-  float ppm = gasSensor.getPPM();
-  delay(1000);
-  digitalWrite(13,HIGH);
-  Serial.print("CO2 ppm value : ");
-  Serial.println(ppm);
+ ppm = gassensor.getPPM();
+ Serial.print("CO2-Gehalt: ");
+ Serial.print(ppm * 100);
+ Serial.println(" ppm");
+ delay (2000);
 }
