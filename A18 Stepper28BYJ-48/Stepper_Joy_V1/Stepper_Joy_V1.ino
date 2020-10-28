@@ -2,67 +2,79 @@
  
 #define STEPS 32
  
-// define stepper motor control pins
-#define IN1 7
-#define IN2 6
-#define IN3 5
-#define IN4 4
+// Stepper Anschlüsse
+#define IN1 8
+#define IN2 10
+#define IN3 9
+#define IN4 11
  
-// initialize stepper library
+// Library initialisieren
 Stepper stepper(STEPS, IN4, IN2, IN3, IN1);
  
-// joystick pot output is connected to Arduino A0
+// Joystick/Poti an NANO A0
 #define joystick A0
+
+int LED13 = 13;     // Interne LED
  
 void setup()
 {
- 
+   Serial.begin(9600);
 }
  
 void loop()
 {
-// read analog value from the potentiometer
+
+
+    
+// Analogwert einlesen
 int val = analogRead(joystick);
+ Serial.print(val);  
+  Serial.println();  
  
-// if the joystic is in the middle ===> stop the motor
+// Wenn Joystick in Mittelstellung = Motor stopp
 if( (val > 500) && (val < 523) )
 {
 digitalWrite(IN1, LOW);
 digitalWrite(IN2, LOW);
 digitalWrite(IN3, LOW);
 digitalWrite(IN4, LOW);
+digitalWrite(LED13, HIGH); 
 }
  
 else
 {
-// move the motor in the first direction
+// Motor rechts
 while (val >= 523)
 {
-// map the speed between 5 and 500 rpm
+  digitalWrite(LED13, LOW); 
+// map Speed zwischen 0 und 500 rpm
 int speed_ = map(val, 523, 1023, 5, 500);
-// set motor speed
+
+// Motor Speed
 stepper.setSpeed(speed_);
  
-// move the motor (1 step)
+// Motordrehung = 1 Stepp
 stepper.step(1);
  
 val = analogRead(joystick);
+ Serial.print(val);  
+  Serial.println();  
 }
  
-// move the motor in the other direction
+// Motor links
 while (val <= 500)
 {
-// map the speed between 5 and 500 rpm
+    digitalWrite(LED13, LOW);
+// Speed zwischen 0 und 500 rpm
 int speed_ = map(val, 500, 0, 5, 500);
-// set motor speed
+// Set Motor Speed
 stepper.setSpeed(speed_);
  
-// move the motor (1 step)
+// Motordrehung = 1 Stepp
 stepper.step(-1);
- 
 val = analogRead(joystick);
+ Serial.print(val);  
+  Serial.println();  
 }
- 
 }
- 
 }
