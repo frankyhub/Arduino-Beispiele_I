@@ -6,7 +6,5 @@
 
 ![image](https://github.com/frankyhub/png/blob/master/28BYJ-48-pinout.png)
 
-![image](https://github.com/frankyhub/png/blob/master/28BYJ-48-pinout.png)
-
 ![image](https://github.com/frankyhub/png/blob/master/28BYJ-48-.JPG)
 
