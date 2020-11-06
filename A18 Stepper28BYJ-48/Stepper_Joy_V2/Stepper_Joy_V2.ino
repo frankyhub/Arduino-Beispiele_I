@@ -5,13 +5,10 @@
  *  Serieller Monitor > Poti
  *  INT LED HIGH bei Mittelstellung
  *  
- *  Stillstand optimiert re/li zwischen val 300 und 723
+ *  Stillstand optimiert re/li 
  *  
- *  KHF 29.10.2020
+ *  KHF 06.11. 2020
  */
-
-
-
 #include <Stepper.h>
  
 #define STEPS 32
@@ -24,6 +21,7 @@
  
 // Library initialisieren
 Stepper stepper(STEPS, IN4, IN2, IN3, IN1);
+ //PINS NANO            11   10   9    8
  
 // Joystick/Poti an NANO A0
 #define joystick A0
@@ -37,9 +35,7 @@ void setup()
  
 void loop()
 {
-
-
-    
+   
 // Analogwert einlesen
 int val = analogRead(joystick);
  Serial.print(val);  
@@ -89,8 +85,8 @@ stepper.setSpeed(speed_);
 // Motordrehung = 1 Stepp
 stepper.step(-1);
 val = analogRead(joystick);
- Serial.print(val);  
-  Serial.println();  
+Serial.print(val);  
+ Serial.println();  
 }
 }
 }
