@@ -1,3 +1,13 @@
+/* Board NANO
+ *  ATmegam328Pm(Old Bootloader
+ *  
+ *  Serieller Monitor > Poti
+ *  INT LED HIGH bei Mittelstellung
+ *  
+ *  Stillstand optimiert re/li 
+ *  
+ *  KHF 06.11. 2020
+ */
 #include <Stepper.h>
  
 #define STEPS 32
@@ -10,6 +20,7 @@
  
 // Library initialisieren
 Stepper stepper(STEPS, IN4, IN2, IN3, IN1);
+ //PINS NANO             11   10   9    8
  
 // Joystick/Poti an NANO A0
 #define joystick A0
@@ -23,16 +34,14 @@ void setup()
  
 void loop()
 {
-
-
-    
+   
 // Analogwert einlesen
 int val = analogRead(joystick);
  Serial.print(val);  
   Serial.println();  
  
 // Wenn Joystick in Mittelstellung = Motor stopp
-if( (val > 500) && (val < 523) )
+if( (val > 523) && (val < 500) )
 {
 digitalWrite(IN1, LOW);
 digitalWrite(IN2, LOW);
@@ -44,11 +53,13 @@ digitalWrite(LED13, HIGH);
 else
 {
 // Motor rechts
-while (val >= 523)
+//while (val >= 523)
+while (val >= 723)
+
 {
   digitalWrite(LED13, LOW); 
 // map Speed zwischen 0 und 500 rpm
-int speed_ = map(val, 523, 1023, 5, 500);
+int speed_ = map(val, 723, 1023, 5, 500);
 
 // Motor Speed
 stepper.setSpeed(speed_);
@@ -62,19 +73,19 @@ val = analogRead(joystick);
 }
  
 // Motor links
-while (val <= 500)
+while (val <= 300)
 {
     digitalWrite(LED13, LOW);
 // Speed zwischen 0 und 500 rpm
-int speed_ = map(val, 500, 0, 5, 500);
+int speed_ = map(val, 500, 0, 5, 300);
 // Set Motor Speed
 stepper.setSpeed(speed_);
  
 // Motordrehung = 1 Stepp
 stepper.step(-1);
 val = analogRead(joystick);
- Serial.print(val);  
-  Serial.println();  
+Serial.print(val);  
+ Serial.println();  
 }
 }
 }
