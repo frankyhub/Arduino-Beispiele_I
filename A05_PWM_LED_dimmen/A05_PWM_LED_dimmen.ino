@@ -1,10 +1,7 @@
-/*
- * LED dimmen
- * Board: Uno
- */
 
 /*
- * LED dimmen
+ * LED1 dimmen
+ * LED3 schalten
  * Board: Uno
  */
 
