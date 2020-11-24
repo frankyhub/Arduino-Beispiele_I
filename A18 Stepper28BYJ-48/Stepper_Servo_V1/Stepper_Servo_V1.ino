@@ -42,24 +42,21 @@ int LED13 = 13;     // Interne LED
 
 
 //----------Servo--------------------
-#include <VarSpeedServo.h> 
-
-
-VarSpeedServo Gr_servo; //Greifarm
-
-int Poti1 = A4;     //Greifarm
-int Greifarm;
-
-//Speed festlegen:
-int SPEED_Gr = 30; //30 bei Test
-
+#include <Servo.h>
+Servo Motor;
+int ReglerWert;
+int Position;
 //-----------------------------------
  
 void setup()
 {
    Serial.begin(9600);
-   Gr_servo.attach(6);   //PWM#6
+  //Gr_servo.attach(6);   //PWM#6
    int Poti1 = analogRead(A4);
+
+
+   // Servo an Pin 6 angeschlossen (attach)
+    Motor.attach(6);
 }
  
 void loop()
@@ -67,8 +64,8 @@ void loop()
    
 // Analogwert einlesen
 int val = analogRead(joystick);
- Serial.print(val);  
-  Serial.println();  
+Serial.print(val);  
+Serial.println();  
  
 // Wenn Joystick in Mittelstellung = Motor stopp
 if( (val > 523) && (val < 500) )
@@ -98,8 +95,8 @@ stepper.setSpeed(speed_);
 stepper.step(1);
  
 val = analogRead(joystick);
- Serial.print(val);  
-  Serial.println();  
+Serial.print(val);  
+Serial.println();  
 }
  
 // Motor links
@@ -114,12 +111,13 @@ stepper.setSpeed(speed_);
 // Motordrehung = 1 Stepp
 stepper.step(-1);
 val = analogRead(joystick);
-Serial.print(val);  
- Serial.println();  
+//Serial.print(val);  
+ //Serial.println();  
 }
 }
-  //Greifarm
-  Greifarm = map(Poti1, 0, 1023, 0, 175);
-  Gr_servo.write(Greifarm, SPEED_Gr);
-  delay(100);
+//Greifarm
+int ReglerWert = analogRead(A4);
+Position = map(ReglerWert, 0, 1023, 0, 180);
+Motor.write(Position);  
+delay(100);
 }
