@@ -31,9 +31,13 @@ analogWrite (LED1, map(ReglerWert1, 0, 1023, 0, 255));
 
 //LED mit Analogeingang e/a schalten  
 ReglerWert2 = analogRead(REGLER2);
+digitalWrite(LED3,ReglerWert2);
+delay(100);
+  
+/*  
 if (ReglerWert2>700) digitalWrite(LED3, HIGH);
 if (ReglerWert2<400) digitalWrite(LED3, LOW);
-    Serial.print(ReglerWert2);
-    Serial.println(); 
-    delay(100);
+Serial.print(ReglerWert2);
+Serial.println(); 
+*/
 }
