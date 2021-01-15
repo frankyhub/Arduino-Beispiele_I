@@ -1,9 +1,7 @@
 /* LED schalten
  *  Board Wemos D1 mini
  *  192.168.1.103
- *  https://draeger-it.blog/wemos-d1-arduino-uno-kompatibles-board-mit-esp8266-chip/
- *    pinMode(LED_BUILTIN, OUTPUT);
- *      digitalWrite(LED_BUILTIN, HIGH);
+ *  
 */
 
 
