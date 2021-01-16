@@ -4,8 +4,8 @@
 #include "images.h"
 
 // Replace with your network credentials
-const char* ssid     = "R2-D2";
-const char* password = "2QK384JVPX";
+const char* ssid     = "xxx";
+const char* password = "xxx";
 
 // Define NTP Client to get time
 const char* ntpServer = "pool.ntp.org";
