@@ -24,12 +24,17 @@ int ledPin = D13; //digitaler PIN 5 des Wemos D1 an welchem die LED angeschlosse
 int ledStatus = LOW; //aktueller Status der LED (default / start  -> AUS)
 WiFiServer server(80); //Port auf welchem der Server laufen soll.
  
+
+int ledStatus = LOW; //aktueller Status der LED (default / start  -> AUS)
+WiFiServer server(80); //Port auf welchem der Server laufen soll.
+ 
 void setup() {
+  pinMode(BUILTIN_LED, OUTPUT); 
   Serial.begin(115200); //Baudrate für die Serielle Geschwindigkeit.
   delay(10); //10ms. Warten damit die Seriele Kommunikation aufgebaut wurde.
   
-  pinMode(ledPin, OUTPUT); //Den LEDPin als ausgang setzen.
-  digitalWrite(ledPin, ledStatus); //Die LED initial auf den Status "AUS" setzen.
+  pinMode(BUILTIN_LED, OUTPUT); //Den BUILTIN_LED als ausgang setzen.
+  digitalWrite(BUILTIN_LED, ledStatus); //Die LED initial auf den Status "AUS" setzen.
    
   Serial.print("Aufbau der Verbindung zu: "); //Ausgabe der SSID auf der Seriellen Schnittstelle.
   Serial.println(ssid);
@@ -90,7 +95,7 @@ void loop() {
     } else {
         ledStatus = HIGH;
     }
-    digitalWrite(ledPin, ledStatus);
+    digitalWrite(BUILTIN_LED, ledStatus);
     Serial.print("LED Status: ");
     Serial.println(ledStatus);
   } 
