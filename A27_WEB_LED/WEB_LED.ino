@@ -20,7 +20,7 @@ const String htmlLinks = "<head><link rel='stylesheet' href='http://frankyhub.de
 const String htmlEnd = "</body></html>";
 const String htmlBreakLine = "</br>";
  
-int ledPin = D13; //digitaler PIN 5 des Wemos D1 an welchem die LED angeschlossen ist.
+//int ledPin = D13; //digitaler PIN 5 des Wemos D1 an welchem die LED angeschlossen ist.
 int ledStatus = LOW; //aktueller Status der LED (default / start  -> AUS)
 WiFiServer server(80); //Port auf welchem der Server laufen soll.
  
