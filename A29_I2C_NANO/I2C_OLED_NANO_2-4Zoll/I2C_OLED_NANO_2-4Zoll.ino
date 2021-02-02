@@ -56,7 +56,7 @@ void setup() {
   er_oled_bitmap(90, 2, Alarm88, 8, 8, oled_buf); 
   er_oled_bitmap(112, 2, Bat816, 16, 8, oled_buf); 
 
-  er_oled_string(10, 52, "www.buydisplay.com", 12, 1, oled_buf); 
+  er_oled_string(10, 52, "www.oberlab.de", 12, 1, oled_buf); 
  
 
   er_oled_char3216(0, 16, '1', oled_buf);
