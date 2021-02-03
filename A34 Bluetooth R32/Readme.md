@@ -1,7 +1,7 @@
 ## UNO R32 Bluetooth 
 
-- Verbindungsaufbau testen und
-- Interne LED e/a schalten Temperaturwert des DS18B20 ausgeben
+- Bluetooth Verbindungsaufbau testen und
+- die interne LED e/a schalten, sowie den Temperaturwert des DS18B20 ausgeben
 - Die Programme werden in Verbindung mit der APP "Serial Bluetooth Terminal" getestet
 
 ### Schaltplan
