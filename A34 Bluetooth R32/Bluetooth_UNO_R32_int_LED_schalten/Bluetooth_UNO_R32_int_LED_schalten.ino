@@ -10,7 +10,7 @@
  *  in M2 kann led_off gespeichert werde.
  *  Ein kurzer Tastendruck auf M1/M2 schaltet die interne LED ein/aus
  *  
- *  Anschluss des DS18B20-Temperatursensors am GPIO02
+ *  Anschluss des DS18B20-Temperatursensors am GPIO39
  *  Die Sensorwerte Temperatur in °C und Fahrenheit werden in der APP alle 10s ausgegeben
  */
 
@@ -30,8 +30,8 @@ BluetoothSerial SerialBT;
 // GPIO2, interne LED
 const int ledPin =  2;
 
-// GPIO2 ist mit dem DS18B20 verbunden
-const int oneWireBus = 2;          
+// GPI39 ist mit dem DS18B20 verbunden
+const int oneWireBus = 39;          
 // Einrichten der oneWire-Instanz für die Kommunikation mit OneWire-Geräten
 OneWire oneWire(oneWireBus);
 // oneWire-Verweis auf den Dallas Temperatursensor übergeben
