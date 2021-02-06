@@ -12,6 +12,7 @@
 - Light dependent resistor
 - Taster
 - 2x 10k Ohm Widerstand
+- Optional: WS2812B Addressable RGB LED Strip
 
 
 ### Fritzing
