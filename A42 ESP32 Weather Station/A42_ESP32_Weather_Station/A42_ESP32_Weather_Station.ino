@@ -21,10 +21,6 @@ OLED Display  GPIO 21 (SDA), GPIO 22 (SCL)
 Light Dependent Resistor (LDR)  GPIO 33
 Pushbutton  GPIO 18
 Addressable RGB LEDs  GPIO 27
-
-
-https://randomnerdtutorials.com/esp32-weather-station-pcb/
-
  
 */
 
