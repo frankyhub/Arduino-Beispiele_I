@@ -1,0 +1,23 @@
+## ESP32 Wetter-Station
+
+### OLED-Display
+
+![image](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A42%20ESP32%20Weather%20Station/OLED-Screen.png)
+
+### Bauteile
+
+- DOIT ESP32 DEVKIT V4
+- BME280 I2C
+- OLED Display I2C
+- Light dependent resistor
+- Taster
+- 2x 10k Ohm Widerstand
+
+
+### Fritzing
+
+![image](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A42%20ESP32%20Weather%20Station/Fritzing.png)
+
+### ESP 32
+
+![image](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A42%20ESP32%20Weather%20Station/ESP32-DOIT-DEVKIT-V1-Board-Pinout-36-GPIOs.jpg)
