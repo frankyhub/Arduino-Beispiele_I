@@ -19,10 +19,10 @@
 
 ![image](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A42%20ESP32%20Weather%20Station/Fritzing.png)
 
-### ESP32 V1
+### ESP32 DEVKIT V1
 
 ![image](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A42%20ESP32%20Weather%20Station/ESP32-DOIT-DEVKIT-V1-Board-Pinout-36-GPIOs.jpg)
 
-### ESP32 V4
+### ESP32 DEVKIT V4
 
 ![image](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A42%20ESP32%20Weather%20Station/ESP32DevKitC%20V4.png)
