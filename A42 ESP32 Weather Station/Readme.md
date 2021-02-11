@@ -28,4 +28,6 @@
 ![image](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A42%20ESP32%20Weather%20Station/ESP32DevKitC%20V4.png)
 
 
-[Link Espressif](https://github.com/espressif/esp-idf/blob/83aaee8/docs/en/hw-reference/get-started-devkitc.rst)
+[Link Github Espressif](https://github.com/espressif/esp-idf/blob/83aaee8/docs/en/hw-reference/get-started-devkitc.rst)
+
+[Link Espressif docs](https://docs.espressif.com/projects/esp-idf/en/release-v4.1/hw-reference/get-started-devkitc.html)
