@@ -6,7 +6,7 @@
 
 ### Bauteile
 
-- DOIT ESP32 DEVKIT V4
+- DOIT ESP32 DEVKIT V1
 - BME280 I2C
 - OLED Display I2C
 - Light dependent resistor
