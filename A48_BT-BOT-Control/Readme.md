@@ -1,4 +1,4 @@
-## BOT-Mover 2 mit APP-Steuerung
+## BOT-Mover 2 mit ESP32 und APP-Steuerung
 
 ### Scahltplan
 
