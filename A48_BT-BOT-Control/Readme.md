@@ -9,4 +9,4 @@
 ![image](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A48_BT-BOT-Control/APP/KHF_ESP32_Mover.png)
 
 #### Download:
-In APP-Inventor die [aia-Datei](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A48_BT-BOT-Control/APP/KHF_ESP32_Mover.aia) importieren
+Die Datei [aia-Datei](https://github.com/frankyhub/Arduino-Beispiele_I/blob/master/A48_BT-BOT-Control/APP/KHF_ESP32_Mover.aia) in den APP-Inventor importieren
