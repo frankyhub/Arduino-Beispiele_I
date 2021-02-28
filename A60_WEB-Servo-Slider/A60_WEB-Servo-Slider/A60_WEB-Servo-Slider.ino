@@ -85,7 +85,7 @@ void loop(){
         if (c == '\n') {                  
           if (currentLine.length() == 0) {
             
-            e:
+            
             client.println("HTTP/1.1 200 OK");
             client.println("Content-type:text/html");
             client.println("Connection: close");
